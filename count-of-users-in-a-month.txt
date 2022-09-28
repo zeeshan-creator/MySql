@@ -1,0 +1,1 @@
+SELECT count(id) AS 'Count', MONTH(created_at) AS Month from users WHERE(created_at) BETWEEN '2022-01-01' AND '2022-12-31' GROUP BY YEAR(created_at), MONTH(created_at);
